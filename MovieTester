@@ -1,0 +1,46 @@
+**
+ * this program will include at least three Movie objects based on each
+ * constructor you will create.
+ * Test getters and test setters.
+ * Display all information of three movies nicely.
+ */
+public class MoviesTester {
+    public static void main(String[] args) {
+
+        Movies bloodSisters = new Movies();
+        bloodSisters.setTitle("bloodSisters");
+        bloodSisters.setYear(2021);
+        bloodSisters.setNameD("Nancy");
+        bloodSisters.setNameL("Emma");
+
+        String title = bloodSisters.getTitle();
+        int Year = bloodSisters.getYear();
+        String NameD = bloodSisters.getNameD();
+        String NameL = bloodSisters.getNameL();
+        System.out.println(bloodSisters);
+
+        Movies flash = new Movies();
+        flash.setTitle("flash");
+        flash.setYear(2018);
+        flash.setNameD("Fred");
+        flash.setNameL("Josh");
+
+        String title1 = flash.getTitle();
+        int Year1 = flash.getYear();
+        String NameD1 = flash.getNameD();
+        String NameL1 = flash.getNameL();
+        System.out.println(flash);
+
+        Movies quantico = new Movies();
+        quantico.setTitle("quantico");
+        quantico.setYear(2015);
+        quantico.setNameD("Alex");
+        quantico.setNameL("Tom");
+
+        String title2 = quantico.getTitle();
+        int Year2 = quantico.getYear();
+        String NameD2 = quantico.getNameD();
+        String NameL2 = quantico.getNameL();
+        System.out.println(quantico);
+    }
+}
