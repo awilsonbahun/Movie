@@ -1,0 +1,60 @@
+/**
+ * class: Movies
+ * date:September 08, 2022
+ * instruction of this program:
+ * (1) attributes - title, released year, name of the director, name of leading role
+ * (2) constructors - no argument constructor which takes from the constructor
+ * with four parameters.
+ * (3) getters and setters
+ * (4) toString method to display each information about a movie. It will display
+ *     each information line by line.
+ *     Title of Movie: ____
+ *     Released Year:  ___
+ *     Director: ______
+ *     Leading role: ______
+ */
+public class Movies {
+    private String title;
+    private int year;
+    private String nameD;
+    private String nameL;
+    public Movies(String title, int year, String nameD, String nameL) {
+        this.title= title;
+        this.year= year;
+        this.nameD=nameD;
+        this.nameL=nameL;
+    }
+    public Movies(){
+        this("titanic",2020,"jean","chris");
+
+    }
+    public String getTitle(){
+        return title;
+    }
+    public void setTitle(String title){
+        this.title=title;
+    }
+    public int getYear(){
+        return year;
+    }
+    public void setYear(int year){
+        this.year =year;
+
+    }
+    public String getNameD(){
+        return nameD;
+    }
+    public void setNameD(String nameD){
+        this.nameD=nameD;
+    }
+    public String getNameL(){
+        return nameL;
+    }
+    public void setNameL(String nameL){
+        this.nameL=nameL;
+    }
+    public String toString() {
+        return "Title of Movie: " + title + "\n" + "Released year: " + year + "\n" + "Director: " +
+                nameD + "\n" + "Leading Role: "+ nameL;
+    }
+}
